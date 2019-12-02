@@ -1,0 +1,8 @@
+- name: Tomcat deployment playbook
+  hosts: all
+  connection: local
+  become: yes
+  become_method: sudo
+  remote_user: tim
+  roles:
+    - tomcat
